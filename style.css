@@ -1,0 +1,249 @@
+body {
+    background-color: #043873;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden; 
+    width: 100%;
+}
+
+
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 5%;
+    position: fixed;
+    background-color: #043873;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-png {
+    width: 35px;
+    height: auto;
+}
+
+.logo-area h2 {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 50px;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-links li {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-links {
+    margin-left: auto; 
+    display: flex;
+    gap: 15px;
+}
+
+.login-btn {
+    background-color: #FFE492;
+    color: #043873;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+.signup-btn {
+    background-color: #4F9CF9;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+
+.hero-div {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.hero-car {
+    width: 30%;
+    min-width: 300px;
+    position: absolute;
+    right: 5%;
+    bottom: 50px;
+}
+
+.main-head {
+    position: absolute;
+    top: 180px;
+    left: 7%;
+    color: white;
+    font-weight: 900;
+    font-size: clamp(30px, 6vw, 65px);
+}
+
+.main-head span {
+    color: #FFFB20;
+}
+
+.main-btn {
+    position: absolute;
+    top: 420px;
+    left: 7%;
+    background-color: white;
+    border: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 80px 5%;
+    background-color: #f8f9fa; 
+}
+
+.card-item {
+    background-color: white;
+    border: #043873 solid 2px;
+    border-radius: 20px;
+    width: 350px;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+
+.blue-rent {
+    background-color: #043873;
+    width: 100%;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.blue-rent .card {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+
+.install {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 5%;
+    gap: 40px;
+}
+
+.install img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.install-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.install h1 {
+    color: #043873;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.install p {
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #043873;
+    width: 100%;
+    padding: 60px 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: white;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer h2, .footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer ul li:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero-car { display: none; }
+    .main-header { padding: 15px 20px; }
+}
